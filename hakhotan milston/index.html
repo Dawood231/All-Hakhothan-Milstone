@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="resume">
+        <header>
+            <h2>Personal Information <button onclick="toggleSection('personal-info', this)">Hide</button></h2>
+        </header>   
+
+        <div id="personal-info">
+            <img src="WhatsApp Image 2024-09-11 at 1.45.50 PM.jpeg" alt="Profile picture" width="180px">
+            <p>Name: Muahmmad Dawood Siddiqui</p>
+            <p>Email: siddiquidawood20@gmail.com</p>
+            <p>Phone: 03343112920</p>
+            <p>Address: Central Government Housing Society</p>
+            <p>LinkedIn ID: Dawood Siddiqui</p>
+        </div>
+
+        <hr>
+
+        <section id="education">
+            <h2>Education <button onclick="toggleSection('education', this)">Hide</button></h2>
+            <div class="section-content">
+                <p>Matriculation, Meridian Grammar School</p>
+                <p>Intermediate, Government National College</p>
+                <p>Bachelor in Engineering Technology, UIT University</p>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2>Skills <button onclick="toggleSection('skills', this)">Hide</button></h2>
+            <div class="section-content">
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>HTML/CSS</li>
+                    <li>Freelancing</li>
+                    <li>Digital Marketing</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Work Experience -->
+        <section id="work-experience">
+            <h2>Work Experience <button onclick="toggleSection('work-experience', this)">Hide</button></h2>
+            <div class="section-content">
+                <p>Software Developer</p>
+                <p>Ex intern @ Codsoft Company 2 months</p>
+                <p>Freelance Web Developer</p>
+                <p>Backend Developer</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.ts"></script>
+</body>
+</html>
+
